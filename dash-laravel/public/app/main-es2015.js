@@ -114,7 +114,6 @@ class AppComponent {
     ;
     ngOnInit() {
         this.http.get('http://localhost:8000/auth').subscribe(data => {
-            console.log(data);
             this.user = data;
         });
     }

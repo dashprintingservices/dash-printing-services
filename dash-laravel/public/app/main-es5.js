@@ -225,7 +225,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var _this = this;
 
           this.http.get('http://localhost:8000/auth').subscribe(function (data) {
-            console.log(data);
             _this.user = data;
           });
         }
